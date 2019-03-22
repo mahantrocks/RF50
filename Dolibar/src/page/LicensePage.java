@@ -16,9 +16,9 @@ public class LicensePage {
  public LicensePage(WebDriver driver) {
 	 PageFactory.initElements(driver, this);
  }
- public void varifyIssueDate(String expected) {
+ public void varifyIssueDate(String iDate) {
 	String actual= issueDate.getText();
-	System.out.println(actual+"date");
-	Assert.assertEquals( actual,expected );
+	//System.out.println(actual+"date");
+	Assert.assertEquals( actual,iDate );
  }
 }

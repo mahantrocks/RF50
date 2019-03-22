@@ -30,11 +30,11 @@ public class LoginPage {
 		  pwTB.sendKeys(pw);
 	  }
 	 public void clickLogin() {
-		 loginBTN.click();  
+		loginBTN.click();  
 	   }
 	 public void varifyErrMsgDisplayed() {
 		// boolean actual = errMSG.isDisplayed();
-		// Assert.assertEquals(actual,true); in real time we use this last line of code instead of these two codes
+		// Assert.assertEquals(actual,true); in real time we use this last line of code instead of these two codes for comparison 
 		 Assert.assertTrue(errMSG.isDisplayed());
 		 
 	 }

@@ -9,12 +9,11 @@ import page.LicensePage;
 import page.LoginPage;
 
 public class CheckIssueDate extends BaseTest{
-	@Test(priority=1)
-	public void testValidLogin() {
-		String un = XL.getData(XL_PATH, "ValidLogin", 1, 0);
-		String pw = XL.getData(XL_PATH, "ValidLogin", 1, 1);
-		String title = XL.getData(XL_PATH, "ValidLogin", 1, 2);
-		String Expected = "Jul 14, 2017";
+	@Test(priority=3)
+	public void testIssueDate() throws InterruptedException {
+		String un = XL.getData(XL_PATH, "CheckIssueDate", 1, 0);
+		String pw = XL.getData(XL_PATH, "CheckIssueDate", 1, 1);
+		String iDate = XL.getData(XL_PATH, "CheckIssueDate", 1, 2);
 		// Enter valid user name 
 		LoginPage l= new LoginPage(driver);
 		l.setUsername(un);
@@ -22,18 +21,21 @@ public class CheckIssueDate extends BaseTest{
 		l.setPassword(pw);
 		// click on Loginbutton
 		l.clickLogin();
-	   
+		// click on seetings
+		Thread.sleep(2000);
+		
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
 		// varify Enter time track page is displayed or not
-		e.varifyPageIsDisplayed(driver,ETO, title);
-		// click on seetings tab
+	
+		Thread.sleep(1000);
 		e.clickSettings();
 		// click on licenses tab
+		Thread.sleep(1000);
 		e.clickLicense();
-		//varify the issue date 
-		
+		//varify the IssueDate 
+		Thread.sleep(2000);
 		LicensePage lc=new LicensePage(driver);
-		lc.varifyIssueDate(Expected);
+		lc.varifyIssueDate(iDate);
 	    
 	    
 

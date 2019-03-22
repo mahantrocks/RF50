@@ -10,7 +10,7 @@ public class XL {
 	int rc=-1;
 	try {
 		Workbook wb = WorkbookFactory.create(new FileInputStream(path));
-		wb.getSheet(sheet).getLastRowNum();
+		  rc=wb.getSheet(sheet).getLastRowNum();
 	}
 	catch(Exception e){
 		
