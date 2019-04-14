@@ -22,7 +22,7 @@ public class XL {
 	 String v="";
 	 try {
 			Workbook wb = WorkbookFactory.create(new FileInputStream(path));
-	     v=wb.getSheet(sheet).getRow(r).getCell(c).toString();
+	       v=wb.getSheet(sheet).getRow(r).getCell(c).toString();
 	 }
 	 catch(Exception e) {
 		 
