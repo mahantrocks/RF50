@@ -17,7 +17,7 @@ public class CheckIssueDate extends BaseTest{
 		// Enter valid user name 
 		LoginPage l= new LoginPage(driver);
 		l.setUsername(un);
-		// Enter valid password
+		// Enter valid password 
 		l.setPassword(pw);
 		// click on Loginbutton
 		l.clickLogin();
@@ -25,7 +25,7 @@ public class CheckIssueDate extends BaseTest{
 		Thread.sleep(2000);
 		
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
-		// varify Enter time track page is displayed or not
+		
 	
 		Thread.sleep(1000);
 		e.clickSettings();
