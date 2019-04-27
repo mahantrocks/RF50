@@ -21,7 +21,7 @@ public class IRCTC_Demo {
 		String path="./data/input.xlsx";
 		Workbook wb = WorkbookFactory.create(new FileInputStream(path));
 		
-		for(int i=1;i<=5;i++) {
+		for(int i=1;i<5;i++) {
 		String city = wb.getSheet("irctc").getRow(i).getCell(0).toString();
 		System.out.println(city);
 		
