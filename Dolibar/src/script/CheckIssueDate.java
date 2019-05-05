@@ -1,5 +1,6 @@
 package script;
 
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import generic.BaseTest;
@@ -14,6 +15,7 @@ public class CheckIssueDate extends BaseTest{
 		String un = XL.getData(XL_PATH, "CheckIssueDate", 1, 0);
 		String pw = XL.getData(XL_PATH, "CheckIssueDate", 1, 1);
 		String iDate = XL.getData(XL_PATH, "CheckIssueDate", 1, 2);
+		Reporter.log(iDate,true);
 		// Enter valid user name 
 		LoginPage l= new LoginPage(driver);
 		l.setUsername(un);

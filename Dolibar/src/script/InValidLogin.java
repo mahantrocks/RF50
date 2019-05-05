@@ -11,8 +11,8 @@ public class InValidLogin extends BaseTest {
 	@Test(priority=1)
 	public void testInValidLogin() throws InterruptedException {
 		 int rc=XL.getRowCount(XL_PATH, "InvalidLogin");
-		 Reporter.log("RowCount"+rc,true);
-		for (int i=1;i<=rc;i++) {
+		 Reporter.log("RowCount is:"+rc,true);
+		for (int i=0;i<rc;i++) {
 		String un = XL.getData(XL_PATH, "InvalidLogin", i, 0);
 		String pw = XL.getData(XL_PATH, "InvalidLogin", i, 1);
 		Reporter.log("UN:"+un,true);

@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 public class EnterTimeTrackPage {
-	private final String xp = "(//div[contains(text(),'Settings')])[1]";
-	@FindBy(xpath = xp)
+	private final String xp = "(//div[@class='popup_menu_label'])[1]";
+	@FindBy(xpath= xp)
 	private WebElement settings;
 
 	@FindBy(linkText = "Licenses")
