@@ -18,6 +18,7 @@ public class LicensePage {
 	}
 	public void varifyIssueDate(String iDate) {
 		String actual= issueDate.getText();
+		System.out.println(iDate);
 		System.out.println(actual);
 		//System.out.println(actual+"date");
 		Assert.assertEquals( actual,iDate );

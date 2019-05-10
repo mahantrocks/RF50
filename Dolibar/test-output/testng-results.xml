@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[RowCount is:4]]>
-    </line>
-    <line>
-      <![CDATA[UN:username]]>
-    </line>
-    <line>
-      <![CDATA[PW:password]]>
-    </line>
-    <line>
-      <![CDATA[UN:abcd]]>
-    </line>
-    <line>
-      <![CDATA[PW:xyz]]>
-    </line>
-    <line>
-      <![CDATA[UN:admin]]>
-    </line>
-    <line>
-      <![CDATA[PW:damager]]>
-    </line>
-    <line>
-      <![CDATA[UN:admin]]>
-    </line>
-    <line>
-      <![CDATA[PW:]]>
-    </line>
-    <line>
-      <![CDATA[Test testInValidLogin is PASS]]>
-    </line>
-    <line>
-      <![CDATA[Home Page Is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Test testValidLogin is PASS]]>
-    </line>
     <line>
       <![CDATA[Jul 14, 2017]]>
     </line>
@@ -44,27 +8,27 @@
       <![CDATA[Test testIssueDate is PASS]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53799" started-at="2019-04-27T16:06:58Z" finished-at="2019-04-27T16:07:52Z">
+  <suite name="Default suite" duration-ms="20554" started-at="2019-05-05T07:07:17Z" finished-at="2019-05-05T07:07:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="53799" started-at="2019-04-27T16:06:58Z" finished-at="2019-04-27T16:07:52Z">
+    <test name="Default test" duration-ms="20554" started-at="2019-05-05T07:07:17Z" finished-at="2019-05-05T07:07:38Z">
       <class name="script.CheckIssueDate">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.CheckIssueDate@47c62251]" name="openApp" is-config="true" duration-ms="6115" started-at="2019-04-27T16:07:37Z" finished-at="2019-04-27T16:07:43Z">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.CheckIssueDate@224edc67]" name="openApp" is-config="true" duration-ms="9179" started-at="2019-05-05T07:07:17Z" finished-at="2019-05-05T07:07:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testIssueDate()[pri:3, instance:script.CheckIssueDate@47c62251]" name="testIssueDate" duration-ms="8887" started-at="2019-04-27T16:07:43Z" finished-at="2019-04-27T16:07:52Z">
+        <test-method status="PASS" signature="testIssueDate()[pri:3, instance:script.CheckIssueDate@224edc67]" name="testIssueDate" duration-ms="10933" started-at="2019-05-05T07:07:26Z" finished-at="2019-05-05T07:07:37Z">
           <reporter-output>
             <line>
               <![CDATA[Jul 14, 2017]]>
             </line>
           </reporter-output>
         </test-method> <!-- testIssueDate -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.CheckIssueDate@47c62251]" name="closeApp" is-config="true" duration-ms="532" started-at="2019-04-27T16:07:52Z" finished-at="2019-04-27T16:07:52Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.CheckIssueDate@224edc67]" name="closeApp" is-config="true" duration-ms="375" started-at="2019-05-05T07:07:37Z" finished-at="2019-05-05T07:07:38Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testIssueDate status=SUCCESS method=CheckIssueDate.testIssueDate()[pri:3, instance:script.CheckIssueDate@47c62251] output=Jul 14, 2017]]]>
+                <![CDATA[[TestResult name=testIssueDate status=SUCCESS method=CheckIssueDate.testIssueDate()[pri:3, instance:script.CheckIssueDate@224edc67] output=Jul 14, 2017]]]>
               </value>
             </param>
           </params>
@@ -75,84 +39,6 @@
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- script.CheckIssueDate -->
-      <class name="script.InValidLogin">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.InValidLogin@3e6fa38a]" name="openApp" is-config="true" duration-ms="10497" started-at="2019-04-27T16:06:58Z" finished-at="2019-04-27T16:07:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInValidLogin()[pri:1, instance:script.InValidLogin@3e6fa38a]" name="testInValidLogin" duration-ms="14255" started-at="2019-04-27T16:07:09Z" finished-at="2019-04-27T16:07:23Z">
-          <reporter-output>
-            <line>
-              <![CDATA[RowCount is:4]]>
-            </line>
-            <line>
-              <![CDATA[UN:username]]>
-            </line>
-            <line>
-              <![CDATA[PW:password]]>
-            </line>
-            <line>
-              <![CDATA[UN:abcd]]>
-            </line>
-            <line>
-              <![CDATA[PW:xyz]]>
-            </line>
-            <line>
-              <![CDATA[UN:admin]]>
-            </line>
-            <line>
-              <![CDATA[PW:damager]]>
-            </line>
-            <line>
-              <![CDATA[UN:admin]]>
-            </line>
-            <line>
-              <![CDATA[PW:]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testInValidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.InValidLogin@3e6fa38a]" name="closeApp" is-config="true" duration-ms="264" started-at="2019-04-27T16:07:23Z" finished-at="2019-04-27T16:07:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testInValidLogin status=SUCCESS method=InValidLogin.testInValidLogin()[pri:1, instance:script.InValidLogin@3e6fa38a] output=RowCount is:4]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test testInValidLogin is PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.InValidLogin -->
-      <class name="script.ValidLogin">
-        <test-method status="PASS" signature="openApp()[pri:0, instance:script.ValidLogin@66a3ffec]" name="openApp" is-config="true" duration-ms="7092" started-at="2019-04-27T16:07:23Z" finished-at="2019-04-27T16:07:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidLogin()[pri:1, instance:script.ValidLogin@66a3ffec]" name="testValidLogin" duration-ms="4679" started-at="2019-04-27T16:07:31Z" finished-at="2019-04-27T16:07:35Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Home Page Is displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.ValidLogin@66a3ffec]" name="closeApp" is-config="true" duration-ms="1388" started-at="2019-04-27T16:07:35Z" finished-at="2019-04-27T16:07:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=ValidLogin.testValidLogin()[pri:1, instance:script.ValidLogin@66a3ffec] output=Home Page Is displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test testValidLogin is PASS]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.ValidLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
